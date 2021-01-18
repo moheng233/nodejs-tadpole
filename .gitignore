@@ -8,3 +8,5 @@
 !/.yarn/cache
 /.pnp.*
 .yarn
+
+dist
