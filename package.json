@@ -1,0 +1,33 @@
+{
+	"name": "nodejs-tadpole",
+	"private": true,
+	"scripts": {
+		"devClient": "yarn run webpack-dev-server --env BUILD_ENV=DEV --config webpack.client.js",
+		"devServer": "yarn run webpack --env BUILD_ENV=DEV --config webpack.server.js",
+		"buildClient": "yarn run webpack --env BUILD_ENV=BUILD --config webpack.client.js",
+		"buildServer": "yarn run webpack --env BUILD_ENV=BUILD --config webpack.server.js"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.21",
+		"@types/stats.js": "^0.17.0",
+		"@types/uuid": "^8.3.0",
+		"@webpack-cli/serve": "^1.2.1",
+		"@yarnpkg/pnpify": "^2.4.0",
+		"html-webpack-plugin": "next",
+		"ts-loader": "^8.0.14",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.3",
+		"webpack": "latest",
+		"webpack-cli": "^3.2.1",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"eiows": "^3.4.1",
+		"pixi.js": "^5.3.7",
+		"socket.io": "^3.1.0",
+		"socket.io-client": "^3.1.0",
+		"stats.js": "^0.17.0",
+		"unitimer": "^3.14.0",
+		"uuid": "^8.3.2"
+	}
+}
